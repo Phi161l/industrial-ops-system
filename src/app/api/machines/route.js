@@ -48,7 +48,7 @@ function updateMachineData() {
 }
 
 // Update machine data every 5 seconds (simulate real-time changes)
-setInterval(updateMachineData, 5000);
+setInterval(updateMachineData, 500);
 
 export async function GET() {
   return NextResponse.json(machines);

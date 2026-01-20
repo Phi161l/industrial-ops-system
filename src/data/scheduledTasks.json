@@ -22,5 +22,141 @@
     "task": "Check alignment",
     "scheduledDate": "2026-01-19T07:00:00Z",
     "status": "completed"
+  },
+  {
+    "id": "S004",
+    "machineId": "M004",
+    "machineName": "Robot Arm 1",
+    "task": "Calibrate joints",
+    "scheduledDate": "2026-01-20T11:00:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "S005",
+    "machineId": "M005",
+    "machineName": "Paint Sprayer",
+    "task": "Clean nozzles",
+    "scheduledDate": "2026-01-19T14:00:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "S006",
+    "machineId": "M006",
+    "machineName": "Packaging Machine",
+    "task": "Replace belts",
+    "scheduledDate": "2026-01-22T09:30:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "S007",
+    "machineId": "M007",
+    "machineName": "Cooling System",
+    "task": "Check pressure valves",
+    "scheduledDate": "2026-01-20T08:30:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "S008",
+    "machineId": "M008",
+    "machineName": "Laser Cutter",
+    "task": "Clean lenses",
+    "scheduledDate": "2026-01-21T13:00:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "S009",
+    "machineId": "M009",
+    "machineName": "Robot Arm 2",
+    "task": "Lubricate gears",
+    "scheduledDate": "2026-01-19T15:00:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "S010",
+    "machineId": "M010",
+    "machineName": "3D Printer",
+    "task": "Replace filament spool",
+    "scheduledDate": "2026-01-20T12:00:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "S101",
+    "machineId": "M101",
+    "machineName": "Hydraulic Press",
+    "task": "Inspect hydraulic fluid",
+    "scheduledDate": "2026-01-21T09:00:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "S102",
+    "machineId": "M102",
+    "machineName": "Conveyor Belt 1",
+    "task": "Tighten rollers",
+    "scheduledDate": "2026-01-22T10:00:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "S103",
+    "machineId": "M103",
+    "machineName": "UV Curing Oven",
+    "task": "Replace UV bulbs",
+    "scheduledDate": "2026-01-20T07:30:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "S104",
+    "machineId": "M104",
+    "machineName": "Robotic Welder",
+    "task": "Calibrate welding arm",
+    "scheduledDate": "2026-01-21T11:00:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "S105",
+    "machineId": "M105",
+    "machineName": "Foam Cutter",
+    "task": "Sharpen cutting blade",
+    "scheduledDate": "2026-01-20T14:00:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "S106",
+    "machineId": "M101",
+    "machineName": "Hydraulic Press",
+    "task": "Check pressure gauges",
+    "scheduledDate": "2026-01-22T09:30:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "S107",
+    "machineId": "M102",
+    "machineName": "Conveyor Belt 1",
+    "task": "Lubricate bearings",
+    "scheduledDate": "2026-01-21T08:30:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "S108",
+    "machineId": "M103",
+    "machineName": "UV Curing Oven",
+    "task": "Clean oven interior",
+    "scheduledDate": "2026-01-23T13:00:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "S109",
+    "machineId": "M104",
+    "machineName": "Robotic Welder",
+    "task": "Lubricate joints",
+    "scheduledDate": "2026-01-20T15:00:00Z",
+    "status": "completed"
+  },
+  {
+    "id": "S110",
+    "machineId": "M105",
+    "machineName": "Foam Cutter",
+    "task": "Replace foam blade",
+    "scheduledDate": "2026-01-21T12:00:00Z",
+    "status": "pending"
   }
 ]

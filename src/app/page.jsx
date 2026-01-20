@@ -24,7 +24,7 @@ export default function DashboardPage() {
 
   useEffect(() => {
     fetchMachines();
-    const interval = setInterval(fetchMachines, 5000);
+    const interval = setInterval(fetchMachines, 500);
     return () => clearInterval(interval);
   }, []);
 

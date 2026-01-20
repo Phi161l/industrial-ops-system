@@ -7,9 +7,21 @@
     "productionCount": 120,
     "lastUpdated": "2026-01-19T08:00:00Z",
     "history": [
-      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 90, "productionCount": 100 },
-      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 91, "productionCount": 110 },
-      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 92, "productionCount": 120 }
+      {
+        "timestamp": "2026-01-19T06:00:00Z",
+        "efficiency": 90,
+        "productionCount": 100
+      },
+      {
+        "timestamp": "2026-01-19T07:00:00Z",
+        "efficiency": 91,
+        "productionCount": 110
+      },
+      {
+        "timestamp": "2026-01-19T08:00:00Z",
+        "efficiency": 92,
+        "productionCount": 120
+      }
     ]
   },
   {
@@ -20,9 +32,21 @@
     "productionCount": 95,
     "lastUpdated": "2026-01-19T08:00:00Z",
     "history": [
-      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 75, "productionCount": 80 },
-      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 76, "productionCount": 90 },
-      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 78, "productionCount": 95 }
+      {
+        "timestamp": "2026-01-19T06:00:00Z",
+        "efficiency": 75,
+        "productionCount": 80
+      },
+      {
+        "timestamp": "2026-01-19T07:00:00Z",
+        "efficiency": 76,
+        "productionCount": 90
+      },
+      {
+        "timestamp": "2026-01-19T08:00:00Z",
+        "efficiency": 78,
+        "productionCount": 95
+      }
     ]
   },
   {
@@ -33,9 +57,21 @@
     "productionCount": 0,
     "lastUpdated": "2026-01-19T08:00:00Z",
     "history": [
-      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 0, "productionCount": 0 },
-      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 0, "productionCount": 0 },
-      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 0, "productionCount": 0 }
+      {
+        "timestamp": "2026-01-19T06:00:00Z",
+        "efficiency": 0,
+        "productionCount": 0
+      },
+      {
+        "timestamp": "2026-01-19T07:00:00Z",
+        "efficiency": 0,
+        "productionCount": 0
+      },
+      {
+        "timestamp": "2026-01-19T08:00:00Z",
+        "efficiency": 0,
+        "productionCount": 0
+      }
     ]
   },
   {
@@ -46,9 +82,21 @@
     "productionCount": 120,
     "lastUpdated": "2026-01-19T08:00:00Z",
     "history": [
-      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 85, "productionCount": 100 },
-      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 87, "productionCount": 110 },
-      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 88, "productionCount": 120 }
+      {
+        "timestamp": "2026-01-19T06:00:00Z",
+        "efficiency": 85,
+        "productionCount": 100
+      },
+      {
+        "timestamp": "2026-01-19T07:00:00Z",
+        "efficiency": 87,
+        "productionCount": 110
+      },
+      {
+        "timestamp": "2026-01-19T08:00:00Z",
+        "efficiency": 88,
+        "productionCount": 120
+      }
     ]
   },
   {
@@ -59,9 +107,21 @@
     "productionCount": 75,
     "lastUpdated": "2026-01-19T08:00:00Z",
     "history": [
-      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 78, "productionCount": 60 },
-      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 79, "productionCount": 68 },
-      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 80, "productionCount": 75 }
+      {
+        "timestamp": "2026-01-19T06:00:00Z",
+        "efficiency": 78,
+        "productionCount": 60
+      },
+      {
+        "timestamp": "2026-01-19T07:00:00Z",
+        "efficiency": 79,
+        "productionCount": 68
+      },
+      {
+        "timestamp": "2026-01-19T08:00:00Z",
+        "efficiency": 80,
+        "productionCount": 75
+      }
     ]
   },
   {
@@ -72,9 +132,21 @@
     "productionCount": 150,
     "lastUpdated": "2026-01-19T08:00:00Z",
     "history": [
-      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 82, "productionCount": 120 },
-      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 84, "productionCount": 140 },
-      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 85, "productionCount": 150 }
+      {
+        "timestamp": "2026-01-19T06:00:00Z",
+        "efficiency": 82,
+        "productionCount": 120
+      },
+      {
+        "timestamp": "2026-01-19T07:00:00Z",
+        "efficiency": 84,
+        "productionCount": 140
+      },
+      {
+        "timestamp": "2026-01-19T08:00:00Z",
+        "efficiency": 85,
+        "productionCount": 150
+      }
     ]
   },
   {
@@ -85,9 +157,21 @@
     "productionCount": 0,
     "lastUpdated": "2026-01-19T08:00:00Z",
     "history": [
-      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 0, "productionCount": 0 },
-      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 0, "productionCount": 0 },
-      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 0, "productionCount": 0 }
+      {
+        "timestamp": "2026-01-19T06:00:00Z",
+        "efficiency": 0,
+        "productionCount": 0
+      },
+      {
+        "timestamp": "2026-01-19T07:00:00Z",
+        "efficiency": 0,
+        "productionCount": 0
+      },
+      {
+        "timestamp": "2026-01-19T08:00:00Z",
+        "efficiency": 0,
+        "productionCount": 0
+      }
     ]
   },
   {
@@ -98,9 +182,21 @@
     "productionCount": 60,
     "lastUpdated": "2026-01-19T08:00:00Z",
     "history": [
-      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 87, "productionCount": 40 },
-      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 89, "productionCount": 50 },
-      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 90, "productionCount": 60 }
+      {
+        "timestamp": "2026-01-19T06:00:00Z",
+        "efficiency": 87,
+        "productionCount": 40
+      },
+      {
+        "timestamp": "2026-01-19T07:00:00Z",
+        "efficiency": 89,
+        "productionCount": 50
+      },
+      {
+        "timestamp": "2026-01-19T08:00:00Z",
+        "efficiency": 90,
+        "productionCount": 60
+      }
     ]
   },
   {
@@ -111,9 +207,21 @@
     "productionCount": 110,
     "lastUpdated": "2026-01-19T08:00:00Z",
     "history": [
-      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 84, "productionCount": 90 },
-      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 86, "productionCount": 100 },
-      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 87, "productionCount": 110 }
+      {
+        "timestamp": "2026-01-19T06:00:00Z",
+        "efficiency": 84,
+        "productionCount": 90
+      },
+      {
+        "timestamp": "2026-01-19T07:00:00Z",
+        "efficiency": 86,
+        "productionCount": 100
+      },
+      {
+        "timestamp": "2026-01-19T08:00:00Z",
+        "efficiency": 87,
+        "productionCount": 110
+      }
     ]
   },
   {
@@ -124,23 +232,171 @@
     "productionCount": 25,
     "lastUpdated": "2026-01-19T08:00:00Z",
     "history": [
-      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 90, "productionCount": 15 },
-      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 91, "productionCount": 20 },
-      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 92, "productionCount": 25 }
+      {
+        "timestamp": "2026-01-19T06:00:00Z",
+        "efficiency": 90,
+        "productionCount": 15
+      },
+      {
+        "timestamp": "2026-01-19T07:00:00Z",
+        "efficiency": 91,
+        "productionCount": 20
+      },
+      {
+        "timestamp": "2026-01-19T08:00:00Z",
+        "efficiency": 92,
+        "productionCount": 25
+      }
     ]
   },
   {
-  "id": "M011",
-  "name": "Welding Station",
-  "status": "running",
-  "efficiency": 89,
-  "productionCount": 70,
-  "lastUpdated": "2026-01-19T08:00:00Z",
-  "history": [
-    { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 85, "productionCount": 50 },
-    { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 87, "productionCount": 60 },
-    { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 89, "productionCount": 70 }
-  ]
-}
-
+    "id": "M011",
+    "name": "Welding Station",
+    "status": "running",
+    "efficiency": 89,
+    "productionCount": 70,
+    "lastUpdated": "2026-01-19T08:00:00Z",
+    "history": [
+      {
+        "timestamp": "2026-01-19T06:00:00Z",
+        "efficiency": 85,
+        "productionCount": 50
+      },
+      {
+        "timestamp": "2026-01-19T07:00:00Z",
+        "efficiency": 87,
+        "productionCount": 60
+      },
+      {
+        "timestamp": "2026-01-19T08:00:00Z",
+        "efficiency": 89,
+        "productionCount": 70
+      }
+    ]
+  },
+  {
+    "id": "M101",
+    "name": "Hydraulic Press",
+    "status": "running",
+    "efficiency": 95,
+    "productionCount": 200,
+    "lastUpdated": "2026-01-20T08:00:00Z",
+    "history": [
+      {
+        "timestamp": "2026-01-20T06:00:00Z",
+        "efficiency": 93,
+        "productionCount": 180
+      },
+      {
+        "timestamp": "2026-01-20T07:00:00Z",
+        "efficiency": 94,
+        "productionCount": 190
+      },
+      {
+        "timestamp": "2026-01-20T08:00:00Z",
+        "efficiency": 95,
+        "productionCount": 200
+      }
+    ]
+  },
+  {
+    "id": "M102",
+    "name": "Conveyor Belt 1",
+    "status": "idle",
+    "efficiency": 70,
+    "productionCount": 50,
+    "lastUpdated": "2026-01-20T08:00:00Z",
+    "history": [
+      {
+        "timestamp": "2026-01-20T06:00:00Z",
+        "efficiency": 68,
+        "productionCount": 40
+      },
+      {
+        "timestamp": "2026-01-20T07:00:00Z",
+        "efficiency": 69,
+        "productionCount": 45
+      },
+      {
+        "timestamp": "2026-01-20T08:00:00Z",
+        "efficiency": 70,
+        "productionCount": 50
+      }
+    ]
+  },
+  {
+    "id": "M103",
+    "name": "UV Curing Oven",
+    "status": "maintenance",
+    "efficiency": 0,
+    "productionCount": 0,
+    "lastUpdated": "2026-01-20T08:00:00Z",
+    "history": [
+      {
+        "timestamp": "2026-01-20T06:00:00Z",
+        "efficiency": 0,
+        "productionCount": 0
+      },
+      {
+        "timestamp": "2026-01-20T07:00:00Z",
+        "efficiency": 0,
+        "productionCount": 0
+      },
+      {
+        "timestamp": "2026-01-20T08:00:00Z",
+        "efficiency": 0,
+        "productionCount": 0
+      }
+    ]
+  },
+  {
+    "id": "M104",
+    "name": "Robotic Welder",
+    "status": "running",
+    "efficiency": 88,
+    "productionCount": 140,
+    "lastUpdated": "2026-01-20T08:00:00Z",
+    "history": [
+      {
+        "timestamp": "2026-01-20T06:00:00Z",
+        "efficiency": 85,
+        "productionCount": 120
+      },
+      {
+        "timestamp": "2026-01-20T07:00:00Z",
+        "efficiency": 87,
+        "productionCount": 130
+      },
+      {
+        "timestamp": "2026-01-20T08:00:00Z",
+        "efficiency": 88,
+        "productionCount": 140
+      }
+    ]
+  },
+  {
+    "id": "M105",
+    "name": "Foam Cutter",
+    "status": "running",
+    "efficiency": 82,
+    "productionCount": 90,
+    "lastUpdated": "2026-01-20T08:00:00Z",
+    "history": [
+      {
+        "timestamp": "2026-01-20T06:00:00Z",
+        "efficiency": 80,
+        "productionCount": 70
+      },
+      {
+        "timestamp": "2026-01-20T07:00:00Z",
+        "efficiency": 81,
+        "productionCount": 80
+      },
+      {
+        "timestamp": "2026-01-20T08:00:00Z",
+        "efficiency": 82,
+        "productionCount": 90
+      }
+    ]
+  }
 ]
