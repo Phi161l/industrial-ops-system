@@ -1,8 +1,129 @@
 .dashboard {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
+}
+
+.dashboard h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.chartContainer {
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cardHeader h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #333;
+}
+
+.cardValue {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.statusList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.statusList li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.statusDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.statusDot[data-status='running'] {
+  background-color: #4CAF50;
+}
+
+.statusDot[data-status='idle'] {
+  background-color: #FFC107;
+}
+
+.statusDot[data-status='maintenance'] {
+  background-color: #F44336;
+}
+
+.sectionTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: left;
+}
+
+
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+}
+
+.card p {
+  margin: 0.3rem 0;
+  color: #555;
 }

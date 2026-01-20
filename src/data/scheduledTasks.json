@@ -1,0 +1,26 @@
+[
+  {
+    "id": "S001",
+    "machineId": "M001",
+    "machineName": "Lathe Machine",
+    "task": "Lubricate spindle",
+    "scheduledDate": "2026-01-20T09:00:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "S002",
+    "machineId": "M002",
+    "machineName": "CNC Mill",
+    "task": "Replace coolant",
+    "scheduledDate": "2026-01-21T10:00:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "S003",
+    "machineId": "M003",
+    "machineName": "Drill Press",
+    "task": "Check alignment",
+    "scheduledDate": "2026-01-19T07:00:00Z",
+    "status": "completed"
+  }
+]

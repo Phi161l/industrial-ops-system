@@ -1,11 +1,16 @@
 [
   {
     "id": "M001",
-    "name": "CNC Lathe Machine",
+    "name": "Lathe Machine",
     "status": "running",
-    "efficiency": 93,
-    "productionCount": 180,
-    "lastUpdated": "2026-01-19T09:42:00Z"
+    "efficiency": 92,
+    "productionCount": 120,
+    "lastUpdated": "2026-01-19T08:00:00Z",
+    "history": [
+      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 90, "productionCount": 100 },
+      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 91, "productionCount": 110 },
+      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 92, "productionCount": 120 }
+    ]
   },
   {
     "id": "M002",
@@ -13,7 +18,12 @@
     "status": "idle",
     "efficiency": 78,
     "productionCount": 95,
-    "lastUpdated": "2026-01-19T09:40:00Z"
+    "lastUpdated": "2026-01-19T08:00:00Z",
+    "history": [
+      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 75, "productionCount": 80 },
+      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 76, "productionCount": 90 },
+      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 78, "productionCount": 95 }
+    ]
   },
   {
     "id": "M003",
@@ -21,6 +31,116 @@
     "status": "maintenance",
     "efficiency": 0,
     "productionCount": 0,
-    "lastUpdated": "2026-01-19T09:35:00Z"
-  }
+    "lastUpdated": "2026-01-19T08:00:00Z",
+    "history": [
+      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 0, "productionCount": 0 },
+      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 0, "productionCount": 0 },
+      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 0, "productionCount": 0 }
+    ]
+  },
+  {
+    "id": "M004",
+    "name": "Robot Arm 1",
+    "status": "running",
+    "efficiency": 88,
+    "productionCount": 120,
+    "lastUpdated": "2026-01-19T08:00:00Z",
+    "history": [
+      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 85, "productionCount": 100 },
+      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 87, "productionCount": 110 },
+      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 88, "productionCount": 120 }
+    ]
+  },
+  {
+    "id": "M005",
+    "name": "Paint Sprayer",
+    "status": "running",
+    "efficiency": 80,
+    "productionCount": 75,
+    "lastUpdated": "2026-01-19T08:00:00Z",
+    "history": [
+      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 78, "productionCount": 60 },
+      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 79, "productionCount": 68 },
+      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 80, "productionCount": 75 }
+    ]
+  },
+  {
+    "id": "M006",
+    "name": "Packaging Machine",
+    "status": "running",
+    "efficiency": 85,
+    "productionCount": 150,
+    "lastUpdated": "2026-01-19T08:00:00Z",
+    "history": [
+      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 82, "productionCount": 120 },
+      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 84, "productionCount": 140 },
+      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 85, "productionCount": 150 }
+    ]
+  },
+  {
+    "id": "M007",
+    "name": "Cooling System",
+    "status": "maintenance",
+    "efficiency": 0,
+    "productionCount": 0,
+    "lastUpdated": "2026-01-19T08:00:00Z",
+    "history": [
+      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 0, "productionCount": 0 },
+      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 0, "productionCount": 0 },
+      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 0, "productionCount": 0 }
+    ]
+  },
+  {
+    "id": "M008",
+    "name": "Laser Cutter",
+    "status": "running",
+    "efficiency": 90,
+    "productionCount": 60,
+    "lastUpdated": "2026-01-19T08:00:00Z",
+    "history": [
+      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 87, "productionCount": 40 },
+      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 89, "productionCount": 50 },
+      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 90, "productionCount": 60 }
+    ]
+  },
+  {
+    "id": "M009",
+    "name": "Robot Arm 2",
+    "status": "running",
+    "efficiency": 87,
+    "productionCount": 110,
+    "lastUpdated": "2026-01-19T08:00:00Z",
+    "history": [
+      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 84, "productionCount": 90 },
+      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 86, "productionCount": 100 },
+      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 87, "productionCount": 110 }
+    ]
+  },
+  {
+    "id": "M010",
+    "name": "3D Printer",
+    "status": "running",
+    "efficiency": 92,
+    "productionCount": 25,
+    "lastUpdated": "2026-01-19T08:00:00Z",
+    "history": [
+      { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 90, "productionCount": 15 },
+      { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 91, "productionCount": 20 },
+      { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 92, "productionCount": 25 }
+    ]
+  },
+  {
+  "id": "M011",
+  "name": "Welding Station",
+  "status": "running",
+  "efficiency": 89,
+  "productionCount": 70,
+  "lastUpdated": "2026-01-19T08:00:00Z",
+  "history": [
+    { "timestamp": "2026-01-19T06:00:00Z", "efficiency": 85, "productionCount": 50 },
+    { "timestamp": "2026-01-19T07:00:00Z", "efficiency": 87, "productionCount": 60 },
+    { "timestamp": "2026-01-19T08:00:00Z", "efficiency": 89, "productionCount": 70 }
+  ]
+}
+
 ]

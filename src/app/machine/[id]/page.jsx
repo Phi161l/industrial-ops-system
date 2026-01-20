@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import MachineDetailCard from '../../../components/MachineDetailCard';
+import MachineDetailChart from '../../../components/MachineDetailChart';
 import Loader from '../../../components/Loader';
 
 export default function MachineDetailPage() {
@@ -28,9 +29,16 @@ export default function MachineDetailPage() {
   if (!machine) return <p style={{ textAlign: 'center' }}>Machine not found</p>;
 
   return (
-    <div style={{ padding: '1rem' }}>
+    <div style={{ padding: '1rem', maxWidth: '900px', margin: '0 auto' }}>
       <h1 style={{ textAlign: 'center', color: '#333' }}>Machine Details</h1>
       <MachineDetailCard machine={machine} />
+
+      {/* Chart Section */}
+      {machine.history && machine.history.length > 0 && (
+        <div style={{ marginTop: '2rem' }}>
+          <MachineDetailChart machine={machine} />
+        </div>
+      )}
     </div>
   );
 }

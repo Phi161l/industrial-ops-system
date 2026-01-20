@@ -30,5 +30,93 @@
     "message": "Power fluctuation detected on Milling Unit 2 line.",
     "level": "warning",
     "acknowledged": true
+  },
+  {
+    "id": "A005",
+    "machineId": "M004",
+    "timestamp": "2026-01-19T09:50:00Z",
+    "message": "Robot Arm 1 is experiencing unexpected vibration.",
+    "level": "error",
+    "acknowledged": false
+  },
+  {
+    "id": "A006",
+    "machineId": "M005",
+    "timestamp": "2026-01-19T10:05:00Z",
+    "message": "Paint Sprayer Nozzle clogged, flow rate reduced.",
+    "level": "warning",
+    "acknowledged": false
+  },
+  {
+    "id": "A007",
+    "machineId": "M001",
+    "timestamp": "2026-01-19T10:10:00Z",
+    "message": "CNC Lathe Machine emergency stop activated.",
+    "level": "critical",
+    "acknowledged": true
+  },
+  {
+    "id": "A008",
+    "machineId": "M003",
+    "timestamp": "2026-01-19T09:55:00Z",
+    "message": "Assembly Conveyor motor temperature high.",
+    "level": "warning",
+    "acknowledged": false
+  },
+  {
+    "id": "A009",
+    "machineId": "M006",
+    "timestamp": "2026-01-19T09:45:00Z",
+    "message": "Packaging Machine sensor calibration required.",
+    "level": "info",
+    "acknowledged": false
+  },
+  {
+    "id": "A010",
+    "machineId": "M004",
+    "timestamp": "2026-01-19T10:15:00Z",
+    "message": "Robot Arm 2 joint torque exceeded safe limit.",
+    "level": "critical",
+    "acknowledged": false
+  },
+  {
+    "id": "A011",
+    "machineId": "M007",
+    "timestamp": "2026-01-19T09:30:00Z",
+    "message": "Cooling System pressure drop detected.",
+    "level": "error",
+    "acknowledged": true
+  },
+  {
+    "id": "A012",
+    "machineId": "M005",
+    "timestamp": "2026-01-19T09:25:00Z",
+    "message": "Paint Sprayer low fluid warning.",
+    "level": "warning",
+    "acknowledged": false
+  },
+  {
+    "id": "A013",
+    "machineId": "M008",
+    "timestamp": "2026-01-19T08:55:00Z",
+    "message": "Laser Cutter alignment deviation detected.",
+    "level": "error",
+    "acknowledged": true
+  },
+  {
+    "id": "A014",
+    "machineId": "M006",
+    "timestamp": "2026-01-19T10:20:00Z",
+    "message": "Packaging Machine belt speed irregularity detected.",
+    "level": "warning",
+    "acknowledged": false
+  },
+  {
+    "id": "A015",
+    "machineId": "M007",
+    "timestamp": "2026-01-19T10:30:00Z",
+    "message": "Cooling System fan failure, backup activated.",
+    "level": "critical",
+    "acknowledged": true
   }
 ]
