@@ -1,7 +1,9 @@
 'use client';
+
 import { useEffect, useState } from 'react';
 import MachineCard from '../components/MachineCard';
 import styles from '../styles/Dashboard.module.css';
+
 
 export default function DashboardPage() {
   const [machines, setMachines] = useState([]);
@@ -21,6 +23,7 @@ export default function DashboardPage() {
   return (
     <div className={styles.dashboard}>
       <h1>Industrial Operations Dashboard</h1>
+      
       <div className={styles.grid}>
         {machines.map(machine => (
           <MachineCard key={machine.id} machine={machine} />

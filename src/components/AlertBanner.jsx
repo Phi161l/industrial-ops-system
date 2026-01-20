@@ -1,6 +1,6 @@
 import styles from '../styles/Alerts.module.css';
 import { formatTime } from '../utils/helpers';
-import { CircleAlert, CircleX, Info } from 'lucide-react'; // optional icons (lucide-react)
+import { CircleAlert, CircleX, Info } from 'lucide-react'; 
 
 export default function AlertBanner({ alert }) {
   const { message, level, timestamp, acknowledged } = alert;

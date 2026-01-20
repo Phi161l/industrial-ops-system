@@ -14,7 +14,7 @@ export default function AlertsPage() {
     };
     fetchAlerts();
 
-    const interval = setInterval(fetchAlerts, 10000); // refresh every 10s
+    const interval = setInterval(fetchAlerts, 10000); 
     return () => clearInterval(interval);
   }, []);
 
