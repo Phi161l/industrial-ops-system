@@ -1,0 +1,26 @@
+[
+  {
+    "id": "M001",
+    "name": "CNC Lathe Machine",
+    "status": "running",
+    "efficiency": 93,
+    "productionCount": 180,
+    "lastUpdated": "2026-01-19T09:42:00Z"
+  },
+  {
+    "id": "M002",
+    "name": "Milling Unit 2",
+    "status": "idle",
+    "efficiency": 78,
+    "productionCount": 95,
+    "lastUpdated": "2026-01-19T09:40:00Z"
+  },
+  {
+    "id": "M003",
+    "name": "Assembly Conveyor",
+    "status": "maintenance",
+    "efficiency": 0,
+    "productionCount": 0,
+    "lastUpdated": "2026-01-19T09:35:00Z"
+  }
+]

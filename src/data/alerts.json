@@ -1,0 +1,34 @@
+[
+  {
+    "id": "A001",
+    "machineId": "M002",
+    "timestamp": "2026-01-19T09:40:00Z",
+    "message": "Milling Unit 2 has been idle for more than 20 minutes.",
+    "level": "warning",
+    "acknowledged": false
+  },
+  {
+    "id": "A002",
+    "machineId": "M003",
+    "timestamp": "2026-01-19T09:35:00Z",
+    "message": "Assembly Conveyor is under maintenance. Operations temporarily paused.",
+    "level": "error",
+    "acknowledged": true
+  },
+  {
+    "id": "A003",
+    "machineId": "M001",
+    "timestamp": "2026-01-19T08:50:00Z",
+    "message": "CNC Lathe Machine temperature sensor exceeded safe threshold.",
+    "level": "critical",
+    "acknowledged": false
+  },
+  {
+    "id": "A004",
+    "machineId": "M002",
+    "timestamp": "2026-01-19T08:20:00Z",
+    "message": "Power fluctuation detected on Milling Unit 2 line.",
+    "level": "warning",
+    "acknowledged": true
+  }
+]

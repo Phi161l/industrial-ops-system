@@ -1,0 +1,60 @@
+.alertsContainer {
+  padding: 1.5rem;
+}
+
+.alertsTitle {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.alertList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.alertCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  padding: 1rem 1.2rem;
+  transition: transform 0.2s ease;
+}
+.alertCard:hover {
+  transform: translateY(-3px);
+}
+
+.alertHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.alertHeader h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.alertMessage {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.alertFooter {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.ackYes {
+  color: #4CAF50;
+  font-weight: bold;
+}
+.ackNo {
+  color: #F44336;
+  font-weight: bold;
+}
