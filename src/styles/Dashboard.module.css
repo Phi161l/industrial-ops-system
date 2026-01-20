@@ -233,18 +233,121 @@
 
 @media (max-width: 768px) {
   .dashboard {
-    padding: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .dashboardHeader {
+    margin-bottom: 1.5rem;
   }
   
   .dashboardHeader h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
   }
   
   .dashboardDescription {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+  
+  .summaryGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .cardValue {
+    font-size: 1.5rem;
+  }
+
+  .cardDescription {
+    font-size: 0.8rem;
   }
   
   .chartContainer {
-    padding: 1rem 1.5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .chartHeader {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.1rem;
+  }
+
+  .chartDescription {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+  
+  .chartWrapper {
+    height: 250px;
+  }
+
+  .chartsGrid {
+    gap: 1rem;
+  }
+
+  .statusCard {
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .statusItem {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .statusLabel {
+    font-size: 0.85rem;
+  }
+
+  .statusCount {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard {
+    padding: 0.25rem;
+  }
+
+  .dashboardHeader h1 {
+    font-size: 1.5rem;
+  }
+
+  .dashboardDescription {
+    font-size: 0.85rem;
+  }
+
+  .summaryGrid {
+    gap: 0.75rem;
+  }
+
+  .card {
+    padding: 0.75rem;
+  }
+
+  .cardValue {
+    font-size: 1.25rem;
+  }
+
+  .chartContainer {
+    padding: 0.75rem;
+  }
+
+  .chartWrapper {
+    height: 200px;
+  }
+
+  .sectionTitle {
+    font-size: 1rem;
   }
 }

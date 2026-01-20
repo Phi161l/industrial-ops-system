@@ -269,15 +269,105 @@
 
 @media (max-width: 768px) {
   .maintenanceContainer {
-    padding: 1rem;
+    padding: 0.5rem;
+  }
+
+  .maintenanceHeader {
+    margin-bottom: 1.5rem;
   }
 
   .maintenanceTitle {
     font-size: 1.5rem;
   }
 
+  .maintenanceSubtitle {
+    font-size: 0.9rem;
+  }
+
+  .statsBar {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .statCard {
+    padding: 0.75rem 1rem;
+    min-width: auto;
+  }
+
+  .statValue {
+    font-size: 1.5rem;
+  }
+
+  .statLabel {
+    font-size: 0.8rem;
+  }
+
+  .filterTabs {
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .filterTabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filterTab {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
   .tasksGrid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .taskCard {
+    padding: 1rem;
+  }
+
+  .taskTitle h3 {
+    font-size: 1rem;
+  }
+
+  .taskInfoItem {
+    font-size: 0.85rem;
+  }
+
+  .emptyState {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .maintenanceContainer {
+    padding: 0.25rem;
+  }
+
+  .maintenanceTitle {
+    font-size: 1.25rem;
+  }
+
+  .maintenanceSubtitle {
+    font-size: 0.85rem;
+  }
+
+  .statsBar {
+    grid-template-columns: 1fr;
+  }
+
+  .statCard {
+    padding: 0.75rem;
+  }
+
+  .statValue {
+    font-size: 1.25rem;
   }
 
   .filterTabs {
@@ -285,8 +375,21 @@
   }
 
   .filterTab {
-    padding: 0.4rem 0.75rem;
-    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .taskCard {
+    padding: 0.75rem;
+  }
+
+  .taskTitle h3 {
+    font-size: 0.9rem;
+  }
+
+  .taskStatus {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
   }
 }
 

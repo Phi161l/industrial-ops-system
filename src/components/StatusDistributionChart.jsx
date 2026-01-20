@@ -1,10 +1,22 @@
 'use client';
+import { useState, useEffect } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function StatusDistributionChart({ machines }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const statusCounts = machines.reduce(
     (acc, m) => {
       acc[m.status] = (acc[m.status] || 0) + 1;
@@ -36,7 +48,7 @@ export default function StatusDistributionChart({ machines }) {
       }
     ]
   };
-
+  
   const options = {
     responsive: true,
     maintainAspectRatio: false,
@@ -44,13 +56,20 @@ export default function StatusDistributionChart({ machines }) {
       legend: {
         position: 'bottom',
         labels: {
-          padding: 15,
+          padding: isMobile ? 10 : 15,
           font: {
-            size: 12
+            size: isMobile ? 10 : 12
           }
         }
       },
       tooltip: {
+        padding: isMobile ? 8 : 12,
+        titleFont: {
+          size: isMobile ? 12 : 14
+        },
+        bodyFont: {
+          size: isMobile ? 11 : 13
+        },
         callbacks: {
           label: function(context) {
             const label = context.label || '';

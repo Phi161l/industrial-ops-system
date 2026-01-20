@@ -230,14 +230,77 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  .addButton {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .modal {
+    width: 95%;
+    max-height: 95vh;
+    margin: 0.5rem;
+  }
+
+  .modalHeader {
+    padding: 1rem;
+  }
+
+  .modalHeader h2 {
+    font-size: 1.25rem;
+  }
+
+  .form {
+    padding: 1rem;
+  }
+
   .formRow {
     grid-template-columns: 1fr;
   }
-  
+
+  .formActions {
+    flex-direction: column;
+  }
+
+  .cancelButton,
+  .submitButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .addButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    width: 100%;
+  }
+
   .modal {
-    width: 95%;
-    margin: 1rem;
+    width: 98%;
+    margin: 0.25rem;
+    border-radius: 12px;
+  }
+
+  .modalHeader {
+    padding: 0.75rem;
+  }
+
+  .modalHeader h2 {
+    font-size: 1.1rem;
+  }
+
+  .form {
+    padding: 0.75rem;
+  }
+
+  .formGroup {
+    margin-bottom: 1rem;
+  }
+
+  .input,
+  .select {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.9rem;
   }
 }
 

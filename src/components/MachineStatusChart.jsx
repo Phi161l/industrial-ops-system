@@ -1,15 +1,32 @@
 'use client';
+import { useState, useEffect } from 'react';
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 export default function MachineStatusChart({ machines }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   // Sort machines by efficiency for better visualization
   const sortedMachines = [...machines].sort((a, b) => b.efficiency - a.efficiency);
   
   const data = {
-    labels: sortedMachines.map(m => m.name.length > 15 ? m.name.substring(0, 15) + '...' : m.name),
+    labels: sortedMachines.map(m => {
+      if (isMobile && m.name.length > 12) {
+        return m.name.substring(0, 12) + '...';
+      }
+      return m.name.length > 15 ? m.name.substring(0, 15) + '...' : m.name;
+    }),
     datasets: [
       {
         label: 'Efficiency (%)',
@@ -39,12 +56,12 @@ export default function MachineStatusChart({ machines }) {
       },
       tooltip: {
         backgroundColor: 'rgba(0, 0, 0, 0.8)',
-        padding: 12,
+        padding: isMobile ? 8 : 12,
         titleFont: {
-          size: 14
+          size: isMobile ? 12 : 14
         },
         bodyFont: {
-          size: 13
+          size: isMobile ? 11 : 13
         },
         callbacks: {
           label: function(context) {
@@ -63,6 +80,9 @@ export default function MachineStatusChart({ machines }) {
         ticks: {
           callback: function(value) {
             return value + '%';
+          },
+          font: {
+            size: isMobile ? 10 : 12
           }
         }
       },
@@ -71,8 +91,11 @@ export default function MachineStatusChart({ machines }) {
           display: false
         },
         ticks: {
-          maxRotation: 45,
-          minRotation: 45
+          maxRotation: isMobile ? 90 : 45,
+          minRotation: isMobile ? 90 : 45,
+          font: {
+            size: isMobile ? 9 : 11
+          }
         }
       }
     }
