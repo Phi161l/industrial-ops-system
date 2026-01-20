@@ -1,8 +1,10 @@
+'use client';
+
 import styles from '../styles/Alerts.module.css';
 import { formatTime } from '../utils/helpers';
-import { CircleAlert, CircleX, Info } from 'lucide-react'; 
+import { CircleAlert, CircleX, Info, ChevronRight } from 'lucide-react'; 
 
-export default function AlertBanner({ alert }) {
+export default function AlertBanner({ alert, onClick }) {
   const { message, level, timestamp, acknowledged } = alert;
 
   const levelColor = {
@@ -20,10 +22,17 @@ export default function AlertBanner({ alert }) {
   };
 
   return (
-    <div className={styles.alertCard} style={{ borderLeft: `6px solid ${levelColor}` }}>
+    <div 
+      className={styles.alertCard} 
+      style={{ borderLeft: `6px solid ${levelColor}` }}
+      onClick={onClick}
+    >
       <div className={styles.alertHeader}>
-        {iconMap[level]} 
-        <h3>{level.toUpperCase()}</h3>
+        <div className={styles.alertHeaderLeft}>
+          {iconMap[level]} 
+          <h3>{level.toUpperCase()}</h3>
+        </div>
+        <ChevronRight size={20} className={styles.chevron} />
       </div>
 
       <p className={styles.alertMessage}>{message}</p>

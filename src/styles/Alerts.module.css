@@ -1,11 +1,61 @@
 .alertsContainer {
-  padding: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.alertsHeader {
+  margin-bottom: 2rem;
 }
 
 .alertsTitle {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  color: #222;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.alertsSubtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.filterTabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.filterTab {
+  padding: 0.5rem 1rem;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filterTab:hover {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.filterTab.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
 }
 
 .alertList {
@@ -16,45 +66,131 @@
 
 .alertCard {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-  padding: 1rem 1.2rem;
-  transition: transform 0.2s ease;
+  padding: 1.25rem 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
+
+.alertCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.3), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
 .alertCard:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.alertCard:hover::before {
+  transform: translateX(100%);
 }
 
 .alertHeader {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 0.5rem;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.alertHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .alertHeader h3 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.chevron {
+  color: #9ca3af;
+  transition: transform 0.2s ease;
+}
+
+.alertCard:hover .chevron {
+  transform: translateX(4px);
+  color: #667eea;
 }
 
 .alertMessage {
-  font-size: 0.95rem;
-  color: #333;
-  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 .alertFooter {
   display: flex;
   justify-content: space-between;
-  font-size: 0.85rem;
-  color: #666;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #6b7280;
 }
 
 .ackYes {
   color: #4CAF50;
-  font-weight: bold;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
+
 .ackNo {
   color: #F44336;
-  font-weight: bold;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.emptyState h3 {
+  color: #374151;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.emptyState p {
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .alertsContainer {
+    padding: 1rem;
+  }
+
+  .alertsTitle {
+    font-size: 1.5rem;
+  }
+
+  .filterTabs {
+    gap: 0.25rem;
+  }
+
+  .filterTab {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+  }
 }

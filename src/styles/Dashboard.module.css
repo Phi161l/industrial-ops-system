@@ -1,25 +1,74 @@
 .dashboard {
   padding: 1.5rem;
+  max-width: 1600px;
+  margin: 0 auto;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
 
-.dashboard h1 {
+.dashboardHeader {
   text-align: center;
-  margin-bottom: 2rem;
-  color: #222;
+  margin-bottom: 2.5rem;
+}
+
+.dashboardHeader h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dashboardDescription {
+  font-size: 1.1rem;
+  color: #6b7280;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .chartContainer {
-  max-width: 900px;
-  margin: 0 auto 2rem auto;
   background: #fff;
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chartContainer:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.chartHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.chartDescription {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.chartWrapper {
+  height: 300px;
+  position: relative;
+}
+
+.chartsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .summaryGrid {
@@ -31,34 +80,59 @@
 
 .card {
   background: #fff;
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
+  padding: 1.5rem;
+  border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid transparent;
 }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card:nth-child(1) {
+  border-left-color: #4CAF50;
+}
+
+.card:nth-child(2) {
+  border-left-color: #2196F3;
+}
+
+.card:nth-child(3) {
+  border-left-color: #FFC107;
+}
+
+.card:nth-child(4) {
+  border-left-color: #667eea;
 }
 
 .cardHeader {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
   margin-bottom: 1rem;
 }
 
 .cardHeader h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 0;
-  color: #333;
+  color: #374151;
+  font-weight: 600;
 }
 
 .cardValue {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #111;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.cardDescription {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
 }
 
 .statusList {
@@ -76,54 +150,101 @@
   color: #555;
 }
 
+.statusItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s ease;
+}
+
+.statusItem:hover {
+  background: #f3f4f6;
+}
+
+.statusLabel {
+  flex: 1;
+  font-weight: 500;
+  color: #374151;
+}
+
+.statusCount {
+  font-weight: 600;
+  color: #6b7280;
+}
+
 .statusDot {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   display: inline-block;
+  flex-shrink: 0;
 }
 
 .statusDot[data-status='running'] {
   background-color: #4CAF50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
 }
 
 .statusDot[data-status='idle'] {
   background-color: #FFC107;
+  box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.2);
 }
 
 .statusDot[data-status='maintenance'] {
   background-color: #F44336;
+  box-shadow: 0 0 0 3px rgba(244, 67, 54, 0.2);
 }
 
 .sectionTitle {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #333;
-  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1f2937;
 }
 
-
-
-.summaryGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.card {
+.statusCard {
   background: #fff;
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-top: 2rem;
 }
 
-.card h3 {
-  margin: 0.5rem 0;
+.statusCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
-.card p {
-  margin: 0.3rem 0;
-  color: #555;
+@media (max-width: 1024px) {
+  .chartsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .chartWrapper {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 1rem;
+  }
+  
+  .dashboardHeader h1 {
+    font-size: 2rem;
+  }
+  
+  .dashboardDescription {
+    font-size: 1rem;
+  }
+  
+  .chartContainer {
+    padding: 1rem 1.5rem;
+  }
 }
